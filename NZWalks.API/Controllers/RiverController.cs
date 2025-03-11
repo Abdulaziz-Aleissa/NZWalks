@@ -30,7 +30,7 @@ namespace NZWalks.API.Controllers
             var riverModels = await riverRepository.GetAllAsync();
             return Ok(mapper.Map<List<RiverDto>>(riverModels));
         }
-        // test
+        // test 2 
         [HttpGet]    
         [Route("{id:guid}")]
         [ValidateModel]
