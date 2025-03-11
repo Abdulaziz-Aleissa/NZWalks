@@ -35,7 +35,6 @@ namespace NZWalks.API.Controllers
         {
             try
             {
-                throw new Exception("This is a custom exception");
                 var regionModels = await regionRepository.GetAllAsync();
                 var regionDtos = mapper.Map<List<RegionDto>>(regionModels);
 
